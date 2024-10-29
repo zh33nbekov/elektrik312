@@ -458,7 +458,7 @@
 						formMessages.html(data.responseText);
 					} else {
 						formMessages.html(
-							'Oops! An error occured and your message could not be sent.'
+							'Упс! Произошла ошибка, и ваше сообщение не удалось отправить.'
 						);
 					}
 				});

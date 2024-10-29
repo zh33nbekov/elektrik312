@@ -29,7 +29,7 @@
 		<meta property="og:type" content="website" />
 		<meta
 			property="og:image"
-			content="https://electrik312.com.kg/assets/img/open-graph/img01.jpg"
+			content="https://elektrik312.com.kg/assets/img/open-graph/img01.jpg"
 		/>
 
 		<!-- OPEN GRAPH -->
@@ -50,7 +50,6 @@
 		/>
 
 		<!-- Favicons - Place favicon.ico in the root directory -->
-
 		<link
 			rel="apple-touch-icon"
 			sizes="57x57"
@@ -131,7 +130,6 @@
 		<meta name="theme-color" content="#ffffff" />
 
 		<!--============================== Google Fonts ============================== -->
-
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -140,7 +138,6 @@
 		/>
 
 		<!--============================== All CSS File ============================== -->
-
 		<!-- Bootstrap -->
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 		<!-- Fontawesome Icon -->
@@ -153,13 +150,55 @@
 		<link rel="stylesheet" href="assets/css/nice-select.min.css" />
 		<!-- Theme Custom CSS -->
 		<link rel="stylesheet" href="assets/css/style.css" />
+
+		<!-- Schema Markup -->
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "Electrician",
+				"name": "ЭЛЕКТРИК312",
+				"description": "Профессиональные электрические услуги в Бишкеке с круглосуточной поддержкой и гарантией качества.",
+				"url": "https://elektrik312.com.kg",
+				"logo": "https://elektrik312.com.kg/logo.png",
+				"image": "https://elektrik312.com.kg/assets/img/hero/hero-image-1.jpg",
+				"telephone": ["+996 703-05-53-33", "+996 222-05-53-30"],
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "Бишкек",
+					"addressLocality": "Бишкек",
+					"postalCode": "720083",
+					"addressCountry": "KG"
+				},
+				"geo": {
+					"@type": "GeoCoordinates",
+					"latitude": "42.8746",
+					"longitude": "74.5698"
+				},
+				"openingHoursSpecification": [
+					{
+						"@type": "OpeningHoursSpecification",
+						"dayOfWeek": [
+							"Monday",
+							"Tuesday",
+							"Wednesday",
+							"Thursday",
+							"Friday",
+							"Saturday",
+							"Sunday"
+						],
+						"opens": "00:00",
+						"closes": "23:59"
+					}
+				],
+				"sameAs": ["ссылки на социальные сети, если есть"]
+			}
+		</script>
 	</head>
 
 	<body>
 		<!--******************************** Code Start From Here ******************************** -->
 
 		<!--============================== Preloader ==============================-->
-
 		<div class="preloader">
 			<button class="th-btn style3 preloaderCls">Закрыть</button>
 			<div class="preloader-inner">
@@ -186,7 +225,6 @@
 		</div>
 
 		<!--============================== Sidemenu ============================== -->
-
 		<div class="sidemenu-wrapper d-none d-lg-block">
 			<div class="sidemenu-content sidemenu-area">
 				<button class="closeButton sideMenuCls">
@@ -272,8 +310,8 @@
 				<button type="submit"><i class="fal fa-search"></i></button>
 			</form>
 		</div>
-		<!--============================== Mobile Menu ============================== -->
 
+		<!--============================== Mobile Menu ============================== -->
 		<div class="th-menu-wrapper">
 			<div class="th-menu-area text-center">
 				<button class="th-menu-toggle"><i class="fal fa-times"></i></button>
@@ -305,7 +343,6 @@
 		</div>
 
 		<!--============================== Header Area ==============================-->
-
 		<header class="th-header header-layout-default">
 			<div class="header-top">
 				<div class="container th-container">
@@ -439,7 +476,6 @@
 		</header>
 
 		<!--============================== Hero Area ==============================-->
-
 		<div class="th-hero-wrapper hero-1" id="hero">
 			<div
 				class="hero-slider-1 th-carousel"
@@ -1008,7 +1044,6 @@
 		</section>
 
 		<!--============================== About Area ==============================-->
-
 		<div class="space bg-smoke overflow-hidden" id="about-sec">
 			<div class="container">
 				<div class="row align-items-center">
@@ -1134,6 +1169,7 @@
 				</div>
 			</div>
 		</div>
+
 		<!--============================== Counter Area ==============================-->
 		<div
 			class="counter-area-1 bg-theme"
@@ -1214,7 +1250,6 @@
 		</div>
 
 		<!--============================== Portfolio Area ==============================-->
-
 		<div class="overflow-hidden space">
 			<div class="container">
 				<div class="mb-35">
@@ -1524,7 +1559,6 @@
 		</div>
 
 		<!--============================== Why choose us Area ==============================-->
-
 		<div class="why-area-1 space overflow-hidden">
 			<div class="container">
 				<div class="row flex-xl-row flex-column-reverse">
@@ -1645,7 +1679,6 @@
 		</div>
 
 		<!--============================== Team Area ==============================-->
-
 		<div
 			class="team-area overflow-hidden space-top"
 			id="team-sec"
@@ -1985,8 +2018,7 @@
 		</div>
 
 		<!--============================== Cta Area ==============================-->
-
-		<div class="container" id="contact-sec" style="scroll-margin-top: 200px">
+		<div class="container" id="contact-sec" style="scroll-margin-top: 230px">
 			<div class="cta-area-1">
 				<div class="row g-0 align-items-center">
 					<div class="col-xl-5">
@@ -2049,7 +2081,7 @@
 						<div class="contact-form-wrap">
 							<h6 class="title h4 text-center">Оставить заявку</h6>
 							<form
-								action="mail.php"
+								action="https://formspree.io/f/xwpkvdpr"
 								method="POST"
 								class="contact-form ajax-contact"
 							>
@@ -2113,9 +2145,6 @@
 												<option value="Установка аристонов">
 													Установка аристонов
 												</option>
-												<option value="Диагностика и планировка">
-													Диагностика и планировка
-												</option>
 												<option value="Монтаж освещения">
 													Монтаж освещения
 												</option>
@@ -2167,19 +2196,19 @@
 										</div>
 									</div>
 									<div class="form-btn col-12">
-										<button class="th-btn w-100">
+										<button class="th-btn w-100" type="submit">
 											Отправить
 											<i class="fas fa-long-arrow-right ms-2"></i>
 										</button>
 									</div>
 								</div>
-								<p class="form-messages mb-0 mt-3"></p>
 							</form>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+
 		<!--============================== Project Area ==============================-->
 		<section class="space overflow-hidden">
 			<div class="container">
@@ -2431,6 +2460,7 @@
 				</div>
 			</div>
 		</section>
+
 		<!--============================== Testimonial Area ==============================-->
 		<section
 			class="testi-area-1 overflow-hidden space"
@@ -2627,7 +2657,6 @@
 		</section>
 
 		<!--============================== Footer Area ==============================-->
-
 		<footer
 			class="footer-wrapper footer-layout1"
 			data-bg-src="assets/img/bg/footer-bg.webp"
@@ -2786,7 +2815,6 @@
 		</div>
 
 		<!--============================== All Js File ============================== -->
-
 		<!-- Jquery -->
 		<script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
 		<!-- Slick Slider -->
