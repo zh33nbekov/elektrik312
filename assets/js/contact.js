@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', function () {
 	const linksWrapper = document.createElement('div');
 	linksWrapper.className = 'links-wrapper';
 
-	// Создание кнопки WhatsApp
 	const whatsappButton = document.createElement('a');
 	whatsappButton.href = `https://wa.me/${whatsAppLink}`;
 	whatsappButton.target = '_blank';
@@ -18,12 +17,10 @@ document.addEventListener('DOMContentLoaded', function () {
         </div>
     `;
 
-	// Создание кнопки телефона
-
 	const oMobileButton = document.createElement('a');
 	oMobileButton.href = `tel:${oMobileOperator}`;
 	oMobileButton.target = '_blank';
-	oMobileButton.title = 'Написать в instagram';
+	oMobileButton.title = 'Позвонить в O!';
 	oMobileButton.rel = 'noopener noreferrer';
 	oMobileButton.innerHTML = `
         <div class="phone-button o-mobile" style='display: flex; align-items: center; justify-content: center;'>
@@ -34,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	const beelineMobileButton = document.createElement('a');
 	beelineMobileButton.href = `tel:${beelineMobileOperator}`;
 	beelineMobileButton.target = '_blank';
-	beelineMobileButton.title = 'Позвонить';
+	beelineMobileButton.title = 'Позвонить в Beeline!';
 	beelineMobileButton.rel = 'noopener noreferrer';
 	beelineMobileButton.innerHTML = `
         <div class="phone-button beeline-mobile" style='display: flex; align-items: center; justify-content: center;'>
@@ -46,7 +43,6 @@ document.addEventListener('DOMContentLoaded', function () {
 	linksWrapper.appendChild(whatsappButton);
 	document.body.appendChild(linksWrapper);
 
-	// Добавление стилей
 	const style = document.createElement('style');
 	style.innerHTML = `
 	 .links-wrapper {
@@ -159,15 +155,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.querySelectorAll('.custom-link').forEach((link) => {
 	link.addEventListener('click', function (event) {
-		event.preventDefault(); // Предотвращаем стандартное поведение ссылки
+		event.preventDefault();
 
-		const targetId = this.getAttribute('href'); // Получаем id целевой секции
-		const targetSection = document.querySelector(targetId); // Находим целевую секцию
+		const targetId = this.getAttribute('href');
+		const targetSection = document.querySelector(targetId);
 
 		if (targetSection) {
 			targetSection.scrollIntoView({
-				behavior: 'smooth', // Плавный скролл
-				block: 'start', // Позиция начала секции в видимой области
+				behavior: 'smooth',
+				block: 'start',
 			});
 		}
 	});
